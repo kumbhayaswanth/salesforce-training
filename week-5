@@ -1,0 +1,124 @@
+
+
+day -4 
+
+1) How is Salesforce better than other CRM systems?
+
+Some other popular CRM systems are:
+- Microsoft Dynamics 365
+- HubSpot CRM
+- Zoho CRM
+- SAP Customer Experience
+- Salesforce
+
+Salesforce has several advantages:
+
+Feature	Salesforce advantage - 
+
+Cloud-based	Access from anywhere
+Customization -	 Create custom objects, fields, applications
+Automation	-    Automate business processes
+Integration - 	 Connect with external applications and APIs
+Scalability -	 Supports growing business requirements
+Security	-   Profiles, roles, permission sets, sharing rules
+Reporting - 	Reports and dashboards
+Development	-   Apex, Lightning Web Components, Flow
+Ecosystem	-   AppExchange marketplace
+
+
+2) Why do companies choose Salesforce?
+
+Suppose a company has 500 employees working in sales, marketing, and customer support.
+Instead of maintaining three separate applications, Salesforce can help bring their customer information and workflows together.
+One team can access relevant customer information created by another team, subject to permissions and sharing settings.
+
+Important: Salesforce isn't automatically better for every company. The right CRM depends on 
+business requirements, budget, complexity, and integrations.
+
+3) Different Salesforce Products
+
+Salesforce provides different products called Clouds. Each cloud is designed for a particular business function.
+The three important products
+
+1. Sales Cloud
+Used to manage sales activities, leads, customers, and business opportunities.
+
+Main functionalities:
+- Lead Management -	A potential customer who may be interested in buying a product
+- Account Management
+- Contact Management
+- Opportunity Management
+- Sales Forecasting
+- Reports and Dashboards
+- Sales Automation
+
+
+2.Service Cloud
+Used to manage customer complaints, support requests, and service operations.
+
+Service Cloud
+Service Cloud helps organizations provide customer support.
+
+Main functionalities:
+- Case Management
+- Customer Support
+- Email-to-Case
+- Web-to-Case
+- Live Chat
+- Knowledge Base
+- Service Console
+- Omni-Channel Routing
+
+
+3.Marketing Cloud
+Used to manage marketing campaigns, customer engagement, and personalized communications.
+
+Marketing Cloud
+Marketing Cloud helps businesses communicate with customers through marketing campaigns.
+
+Main functionalities:
+- Email Marketing
+- SMS Marketing
+- Customer Segmentation
+- Campaign Management
+- Customer Journey Automation
+- Personalized Marketing
+- Campaign Analytics
+
+
+Sales Cloud = Find customers and sell products.
+Service Cloud = Help customers and resolve problems.
+Marketing Cloud = Reach customers and promote products.
+
+
+day - 5
+
+1. What is Force.com?
+Force.com was the name of Salesforce's cloud application development platform.
+It allowed developers to build custom business applications on Salesforce infrastructure without managing the underlying servers.
+Today, the platform is generally referred to as the Salesforce Platform (Lightning Platform).
+
+It provides two ways to develop applications:
+
+1. Declarative development (Low-code / No-code)
+
+Build applications using configuration and drag-and-drop tools without writing much code.
+
+Examples:
+- Object Manager
+- Flow Builder
+- Validation Rules
+- Page Layouts
+- Approval Processes
+
+2. Programmatic development (Code-based)
+
+Developers can write code to implement complex business requirements.
+
+Examples:
+- Apex
+- Lightning Web Components (LWC)
+- SOQL
+- SOSL
+- Salesforce APIs
+
