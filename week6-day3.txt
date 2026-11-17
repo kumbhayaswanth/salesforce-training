@@ -1,0 +1,113 @@
+
+
+day-3 
+
+1) Users
+
+A User in Salesforce is an individual who has access to a Salesforce organization (Org).
+The company might have:
+- Sales Manager
+- Sales Representative
+- Customer Support Executive
+- System Administrator
+Each person has a separate Salesforce user account with different access permissions.
+
+When creating a Salesforce user, we configure:
+
+Field	                                   Description
+First Name	                            User's first name
+Last Name	                             User's last name
+Username	                           Unique login identifier
+Email	                                User's email address
+Alias	                                Short name for the user
+Role	                                Determines record visibility in the role hierarchy
+Profile                               	Defines the user's baseline permissions
+License	                                  Determines which Salesforce features the user can access
+Active	                                  Determines whether the user can log in
+
+
+Profile: Determines what the user can do in Salesforce.
+
+Role: Primarily determines which records the user can see through the role hierarchy.
+
+License: Determines the Salesforce functionality available to the user.
+
+
+2) Profiles in Salesforce
+A Profile defines what a user can do inside Salesforce.
+Every Salesforce user must have exactly one profile.
+
+A profile controls:
+1. Object permissions
+2. Field-level security
+3. Tab visibility
+4. App access
+5. System permissions
+6. Login hours
+7. Login IP ranges
+
+
+3) Types of Profiles
+
+- Standard Profiles
+- Custom Profiles
+
+2.1 Standard Profiles
+Standard profiles are provided by Salesforce.
+
+Common standard profiles include:
+Profile	                                                      Purpose
+System Administrator	                                     Full administrative access
+Standard User	                                               Regular business user access
+Read Only	                                                 Read-only access to permitted data
+Minimum Access –                                                Salesforce	Minimal baseline access
+Contract Manager	                                         Contract-related business access
+Marketing User	                                                Marketing-related permissions
+
+Custom Profiles
+Custom profiles are created based on existing profiles.
+
+For example:
+
+You can create a custom profile called Sales Employee Profile and configure:
+- Account: Read, Create, Edit
+- Contact: Read, Create
+- Opportunity: Read, Edit
+- Reports: View Reports
+This profile can then be assigned to multiple sales employees.
+
+
+4) Permission Sets
+
+A Permission Set provides additional permissions to users without changing their existing profile.
+
+A user can have:
+- One Profile
+- Multiple Permission Sets
+
+
+
+Profile                              	        Permission Set
+Every user must have one	                      Optional
+Defines baseline access	                        Adds extra access
+Only one per user	                           Multiple per user
+Can restrict access	                            Generally grants additional access
+Used for baseline configuration     	        Used for flexible access management
+
+
+
+5) What is a Picklist?
+it is now but dropdown menu we use to provide some options to choose in it 
+A Picklist is a field that allows users to select a value from predefined options.
+
+6) What is a Global Picklist?
+A Global Picklist is a centrally defined set of picklist values that can be reused across multiple objects and fields.
+
+
+7) What is Field Dependency?
+Field Dependency is used when the available values of one picklist field depend on the selected value of another picklist field.
+
+There are two important terms:
+- Controlling Field
+- Dependent Field
+

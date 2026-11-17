@@ -1,0 +1,123 @@
+
+week -6 
+
+day -4
+
+1) Relationships between objects.
+
+Relationships connect two or more Salesforce objects so that related records can be associated with each other.
+Think about a MySQL database.
+
+Salesforce relationships work similarly.
+
+For example:
+- ABC Technologies is an Account.
+- Rahul is a Contact.
+- Priya is another Contact.
+- Both Rahul and Priya belong to ABC Technologies.
+
+Why do we need relationships?
+1. To connect related business data.
+2. To avoid storing duplicate information.
+3. To retrieve related records.
+4. To display related information on record pages.
+5. To perform calculations across related records.
+6. To maintain data consistency.
+
+
+Types of relationships in Salesforce
+Salesforce supports several types of relationships.
+
+The most important ones are:
+1. Lookup Relationship
+2. Master-Detail Relationship
+3. Many-to-Many Relationship
+
+
+Lookup Relationship
+A Lookup Relationship is a loosely coupled relationship between two objects.
+It connects records from one object to records in another object.
+
+A lookup relationship can allow the related record to be optional, depending on its field configuration.
+
+Important characteristics:
+- It is a loosely coupled relationship.
+- The child record can exist without a parent in an optional lookup.
+- Deleting a parent generally does not automatically delete child records.
+- The relationship field is stored on the referencing (child) object.
+- It does not support roll-up summary fields directly.
+- It supports cross-object formula fields.
+
+
+
+Master-Detail Relationship
+A Master-Detail Relationship is a strongly coupled relationship between two objects.
+The master object controls important aspects of the detail object's lifecycle.
+
+Important characteristics:
+1. The detail record cannot exist without its master record.
+2. The detail record must have a master record.
+3. Deleting the master generally deletes its detail records (cascade delete).
+4. The detail record inherits the master's sharing and security settings.
+5. The master object can contain roll-up summary fields.
+6. The relationship field is created on the detail object.
+7. A custom object can have a maximum of two master-detail relationships.
+
+
+When should we use Master-Detail?
+Use it when the child record has no meaningful independent existence without its parent.
+
+
+Many-to-Many Relationship
+A Many-to-Many Relationship means multiple records in one object can be associated with multiple records in another object.
+
+External Lookup Relationship
+This relationship connects a Salesforce object to an external object.
+
+An external object represents data stored outside Salesforce, such as in an external database.
+
+
+DAY 5 – Formulas, Roll-Up Summary, Schema Builder and Lookup Filter
+
+1) What are Formula Fields in Salesforce?
+A Formula Field is a field that automatically calculates and displays a value based on an expression or formula.
+You don't need to enter the value manually. Salesforce calculates it automatically whenever the record is accessed 
+or the relevant data changes.
+Think of it like a calculated column in SQL or an expression in Java.
+
+Formula: for 10% discount 
+(Product_Price__c * Quantity__c) * Discount__c / 100)
+
+
+2) Cross-Object Formula Fields
+A Cross-Object Formula is a formula that retrieves information from a related object.
+In simple words, it allows you to access parent object fields from a child object without manually copying the data.
+
+
+3) Roll-Up Summary Fields
+A Roll-Up Summary Field is used to calculate values from multiple child records and display the calculated result on the parent record.
+In simple words:
+It calculates information from child records and displays the result in the parent record.
+
+4) Schema Builder
+Schema Builder is a Salesforce tool that allows developers to visually view, create and manage objects, fields and relationships.
+Think of it as a visual database design tool.
+If you have worked with MySQL Workbench, you can understand Schema Builder easily.
+In MySQL Workbench, you can view tables, columns and their relationships.
+Similarly, Salesforce Schema Builder allows you to visualize Salesforce objects and how they are connected.
+
+ Why do we use Schema Builder?
+1. To view standard and custom objects.
+2. To understand relationships between objects.
+3. To create custom objects.
+4. To create custom fields.
+5. To create Lookup Relationships.
+6. To create Master-Detail Relationships.
+7. To understand the overall Salesforce data model.
+
+
+5) Lookup Filters
+A Lookup Filter is used to restrict which records users can select in a Lookup field.
+
+In simple words:
+A Lookup Filter shows only the records that satisfy specified conditions.
