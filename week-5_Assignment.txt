@@ -1,0 +1,21 @@
+
+Week 5 Assignment: CRM Usage in ITT (IntimeTec) 
+
+1. How can ITT (IntimeTec), our software company, use CRM? 
+
+Customer Relationship Management (CRM) helps ITT manage interactions with customers, prospects, and business partners 
+in a centralized system. As a software company, ITT can use CRM to track leads from marketing campaigns, manage the sales pipeline, 
+record customer requirements, and monitor project opportunities. CRM can also store customer contact information, communication history, 
+contracts, support requests, and feedback. Different teams such as Sales, Marketing, Customer Success, and Support can access the 
+same customer data, improving collaboration and ensuring better customer service. In addition, CRM can automate follow-ups, 
+reminders, email campaigns, and reporting activities, helping employees work more efficiently and maintain strong relationships with clients. 
+
+2. How can using CRM in ITT (IntimeTec) make an impact? 
+
+Implementing CRM can have a significant positive impact on ITT. It can increase sales productivity by helping teams 
+identify and prioritize potential customers. CRM improves customer satisfaction because employees can quickly access 
+customer information and respond faster to requests or issues. It provides better visibility into business opportunities, 
+enabling management to make data-driven decisions. CRM also improves team collaboration by keeping all customer-related 
+information in one place. Through automation and analytics, ITT can reduce manual work, improve efficiency, 
+increase customer retention, and generate higher revenue. Overall, CRM helps ITT build stronger customer relationships 
+and achieve sustainable business growth. 
