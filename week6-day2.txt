@@ -1,0 +1,292 @@
+
+
+week - 2
+
+day -2 
+
+1) What is APP
+
+A Salesforce App is a collection of related features, objects, tabs, and functionalities grouped together to 
+help users perform specific business activities.
+Think of an App as a workspace designed for a particular business purpose.
+
+Real-time example -- 
+Consider an e-commerce company. Different departments perform different activities:
+- Sales team manages customers, leads, and opportunities.
+- Service team manages customer complaints and support cases.
+- Marketing team manages campaigns and customer engagement.
+Instead of showing every feature to every employee, Salesforce provides different apps for different departments.
+
+
+2) Standard app and custom app 
+
+There are two major types of App:
+1. Standard Apps
+2. Custom Apps
+
+Standard Apps are applications provided by Salesforce out of the box.
+You don't need to create them from scratch.
+
+Examples:
+
+Sales	 -------  Manage leads, accounts, contacts, opportunities
+Service	 --------  Manage customer support and cases
+Marketing ----------	Manage marketing activities
+Salesforce Platform	Access platform functionality
+
+For example, when you open the Sales app, you may see tabs such as:
+- Accounts
+- Contacts
+- Leads
+- Opportunities
+- Campaigns
+- Reports
+- Dashboards
+
+
+Custom Apps
+Custom Apps are applications created by developers or administrators according to business requirements.
+Real-time example
+Suppose a company manages employee information in Salesforce.
+
+The company wants a dedicated application called Employee Management App.
+
+You can create a custom app containing:
+- Employees
+- Departments
+- Attendance
+- Leave Requests
+- Salary Records
+
+
+
+Standard App vs Custom App
+
+Standard App                                                             	Custom App
+
+Provided by Salesforce	                               ------            Created by an admin/developer
+Available by default depending on edition and access   -----	          Created based on business needs
+Contains predefined navigation items	              --------            Navigation can be customized
+Limited customization of app structure	                                   More flexibility in app configuration
+Example: Sales, Service	                                                    Example: Employee Management
+
+
+
+2) What are Tabs in Salesforce?
+
+A Tab is a navigation element that allows users to access objects, records, pages, or other Salesforce features.
+Think of tabs like menu items in a web application.
+
+Example
+Consider a banking application.
+
+It may have menus such as:
+- Customers
+- Accounts
+- Transactions
+- Loans
+Similarly, Salesforce provides tabs to navigate between different business functionalities.
+
+For example, in the Salesforce Sales app:
+- Accounts Tab → Displays company/customer accounts.
+- Contacts Tab → Displays individual customer details.
+- Leads Tab → Displays potential customers.
+- Opportunities Tab → Displays potential sales deals.
+
+Types of Tabs in Salesforce
+Salesforce provides different types of tabs.
+1. Standard Object Tabs
+These tabs are automatically provided for standard Salesforce objects.
+
+Examples:
+- Accounts
+- Contacts
+- Leads
+- Opportunities
+- Cases
+You can use these tabs to access records stored in their respective objects.
+
+2. Custom Object Tabs
+These tabs are created for custom objects.
+
+Example:
+Suppose you create a custom object called Employee.
+To access employee records easily, you create an Employee tab.
+
+3. Web Tabs
+Web Tabs display external websites or web pages inside Salesforce.
+
+Example:
+Suppose your company uses an external payment application.
+You can create a Web Tab to display its website inside Salesforce.
+
+4. Visualforce Tabs
+These tabs display custom Visualforce pages.
+Visualforce is Salesforce's traditional server-side UI framework.
+
+Example:
+A developer creates a custom Visualforce page for displaying employee salary information and creates a Visualforce Tab to access it.
+
+5. Lightning Page Tabs
+These tabs display custom Lightning pages.
+Lightning App Builder is used to create Lightning pages without writing much code.
+
+Example:
+
+You create a custom dashboard-like Lightning page showing:
+- Employee details.
+- Department information.
+- Attendance summary.
+You can create a Lightning Page Tab to access that page.
+
+6. Lightning Component Tabs
+These tabs display custom Lightning components built using the Lightning Component Framework, such as Aura components.
+
+Example:
+
+A developer creates an Aura component for displaying customer order details and exposes it through a Lightning Component Tab.
+
+
+3) Types of Tab Visibility
+
+Tab Visibility controls whether a particular tab is visible to a user.
+
+if we keep the tab under hidden then that tab will not be visible to user 
+
+For example, suppose your Salesforce application has these tabs:
+- Accounts
+- Contacts
+- Employees
+- Salary Details
+The HR team should access Employees and Salary Details, but the Sales team should not see those tabs.
+
+We can control tab visibility through user profiles and permission sets.
+
+1. Default On
+The tab is visible by default in the user's application navigation.
+
+Example:
+
+The Sales team should always see the Accounts tab.
+
+Set its visibility to Default On.
+
+2. Default Off
+The tab is not displayed by default, but users can potentially add it through navigation customization if they have the required access.
+
+Example:
+
+The Sales team rarely uses the Campaigns tab.
+
+Set its visibility to Default Off.
+
+
+3. Tab Hidden
+The tab is hidden from the user and cannot be added through normal navigation customization.
+
+Example:
+
+The Sales team should not have access to the Salary Details tab.
+
+Set its visibility to Tab Hidden.
+
+
+4) Difference between Tab Visibility and Object Permissions
+Tab Visibility controls navigation, whereas Object Permissions control data access.
+
+Tab Visibility	                                                     Object Permissions
+
+Controls whether a tab appears	                                     Controls access to object data
+Default On	                                                                     Read
+Default Off	                                                                         Create
+Tab Hidden                                                                     	Edit
+Configured through profile/permission settings	                      Configured through profiles and permission sets
+
+
+5) What are Objects in Salesforce?
+Objects are database tables used to store business information in Salesforce.
+
+Types of Objects in Salesforce
+There are three commonly discussed categories:
+1. Standard Objects
+2. Custom Objects
+3. External Objects
+
+Standard Objects
+Standard Objects are predefined objects provided by Salesforce.
+
+You don't need to create them manually.
+
+Important standard objects:
+Object	Purpose
+Account	----- Stores company or customer information
+Contact	--    Stores individual customer information
+Lead	-----  Stores potential customers
+Opportunity	---  Stores potential sales deals
+Case	-----  Stores customer issues and support requests
+Campaign ------	Stores marketing campaign information
+Product	---------- Stores product information
+User	-------   Stores Salesforce user information
+
+
+Custom Objects
+Custom Objects are objects created by administrators or developers to store business-specific information.
+
+Salesforce does not provide every business object required by every organization. Therefore, we create custom objects.
+
+
+6) What is Record Name in Salesforce?
+
+Every Salesforce record needs a name or identifier that helps users identify it.
+This is called the Record Name.
+
+For example, in an Employee object, the Record Name might be Employee Name.
+
+Types of Record Name
+
+1) Text
+The user manually enters a name for every record.
+
+2)Auto Number
+Salesforce automatically generates a unique number for every record.
+
+7) What is Track Field History in Salesforce?
+Track Field History is a Salesforce feature that allows organizations to monitor changes made to selected fields in records.
+
+It helps answer questions such as:
+- Who changed the employee's salary?
+- When was the customer's phone number updated?
+- What was the previous value?
+- What is the new value?
+
+
+8) What are Deployment Modes in Salesforce?
+
+In the context of creating Custom Objects, Salesforce provides a setting called Deployment Status.
+
+It determines whether a custom object is available for normal use or remains under development.
+
+There are two options:
+7.1 In Development
+When an object is set to In Development, it is treated as a work in progress.
+
+Example:
+
+Suppose you are developing an Employee Management application.
+
+You created these objects:
+- Employee__c
+- Department__c
+- Attendance__c
+But the application is not ready yet.
+
+You can keep the objects in In Development status while development is ongoing.
+
+Deployed
+When an object is set to Deployed, it is marked as ready for use.
+
+Example:
+
+You completed the Employee Management application, configured its fields, relationships, and permissions, and are ready to make the object available for normal business usage.
+
+You can change its status to Deployed.
