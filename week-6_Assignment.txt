@@ -1,0 +1,24 @@
+
+
+Week 6 Assignment: ISP Management App in Salesforce CRM 
+
+1) Relationships Created and Reasons 
+
+• Customer -> Service Connection (One-to-Many): A customer can have multiple internet connections. 
+• Subscription Plan -> Service Connection (One-to-Many): Many customers can subscribe to the same plan. 
+• Customer -> Billing (One-to-Many): A customer receives multiple bills over time. 
+• Customer -> Support Ticket (One-to-Many): A customer can raise multiple support requests. 
+• Service Connection -> Support Ticket (Lookup Relationship): Tickets are linked to a specific connection for faster troubleshooting. 
+ 
+These relationships reduce data duplication, improve reporting, and provide a complete view of customer activities. 
+
+
+2) Use of Standard Objects 
+
+User: Represents employees such as sales representatives, support engineers, and administrators. 
+Lead: Stores potential customers who have shown interest in ISP services before becoming customers. 
+Account: Represents a customer organization or individual customer after qualification. 
+Contact: Stores customer contact details such as name, phone number, and email address. 
+Opportunity: Tracks potential sales deals for new internet connections, upgrades, or renewals. 
+Product: Represents ISP plans and services such as Broadband, Fiber Internet, and Business Plans. 
+Case: Manages customer support issues, complaints, service outages, and technical problems. 
